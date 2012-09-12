@@ -1,4 +1,4 @@
-if Rails.env.development? || Rails.env.test?
+if Rails.env.development? || Rails.env.test? || Rails.env.staging?
 
   require "silent-postgres/railtie"
   require "silent-postgres/schema_plus"
